@@ -1,7 +1,9 @@
 const mongoose = require('mongoose');
 
 // Connection URL to MongoDB Atlas
-const url = `mongodb+srv://pride:${process.env.MONGOPWD}@cluster0.gzf3lkz.mongodb.net/Pride0?retryWrites=true&w=majority`;
+
+const url = `mongodb+srv://AdressBook:${process.env.MONGOPWD}@adressbook.khhicim.mongodb.net/?retryWrites=true&w=majority`;
+
 
 console.log(`MONGOPWD: ${process.env.MONGOPWD}`)
 

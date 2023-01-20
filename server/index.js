@@ -1,21 +1,30 @@
+
+
 //set up an express server
 const express = require('express');
 const app = express();
 const port = 8080;
+//enable json parsing
+app.use(express.json());
 
-//connect to MariaDB skySql database
-const mysql = require('mysql');
-const connection = mysql.createConnection({
-    host: 'localhost',
-    user: '',
-    password: '',
-    database: 'address'
-});
+//use cors
+const cors = require('cors');
 
-connection.connect(function(err) {
-    if (err) throw err;
-    console.log('Connected to MariaDB!');
-});
+app.use(cors());
+
+//use dotenv
+require('dotenv').config();
+
+//connect to database
+const { connectDB } = require('./config');
+
+connectDB();
+
+//use routes
+app.use('/', require('./routes/contact'));
+
+app.use('/user', require('./routes/user'));
+
 
 
 //set up a route to handle get requests to the homepage
