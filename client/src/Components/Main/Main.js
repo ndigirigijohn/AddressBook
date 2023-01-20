@@ -16,7 +16,7 @@ function Main() {
   const [contacts, setContacts] = useState([])
 
   useEffect(() => {
-    axios.get('http://localhost:8080/').then(
+    axios.get('http://localhost:8081/api/contacts').then(
       (res) => {
         console.log(res.data)
         setContacts(res.data)

@@ -5,7 +5,7 @@ GET http://localhost:8081/api/contacts
 
 //get contact by id
 ###
-GET http://localhost:8081/api/contacts/5
+GET http://localhost:8081/api/contacts/6
 
 //create new contact
 ###
@@ -39,10 +39,9 @@ Content-Type: application/json
 
 //delete contact
 ###
-DELETE http://localhost:8081/api/contacts/4
+DELETE http://localhost:8081/api/contacts/35
 
 //search
 ###
 GET http://localhost:8081/api/contacts/search/1234567890
-
 

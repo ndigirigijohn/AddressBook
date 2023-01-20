@@ -56,12 +56,13 @@ CALL update_contact(1, 'Jane', 'Doe', '555-555-5555', '555-555-5556', 'jane.doe@
 /*Delete a contact*/
 
 DELIMITER //
-CREATE PROCEDURE delete_contact(IN id INT)
+CREATE PROCEDURE delete_contact(IN contact_id INT)
 BEGIN
     DELETE FROM contacts
-    WHERE id = id;
+    WHERE id = contact_id;
 END //
 DELIMITER ;
+
 
 CALL delete_contact(1);
 
@@ -83,6 +84,8 @@ BEGIN
     WHERE id = in_id;
 END //
 DELIMITER ;
+
+CALL get_contact_by_id(1);
 
 
 
