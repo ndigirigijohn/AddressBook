@@ -11,11 +11,11 @@ import {RiVoiceprintFill} from 'react-icons/ri'
 function Footer() {
   return (
     <div className="Footer">
-        <Item icon={<AiFillStar/>} title="Favourites" />
-        <Item icon={<AiFillClockCircle/>} title="Recents" />
-        <Item icon={<AiFillContacts/>} title="Contacts" />
-        <Item icon={<AiFillPhone/>} title="Keypad" />   
-        <Item icon={<RiVoiceprintFill/>} title="Voice mail" />        
+        <Item ids={'fav'} icon={<AiFillStar/>} title="Favourites" />
+        <Item ids={'rec'} icon={<AiFillClockCircle/>} title="Recents" />
+        <Item ids={'cont'} icon={<AiFillContacts/>} title="Contacts" />
+        <Item ids={'key'} icon={<AiFillPhone/>} title="Keypad" />   
+        <Item ids={'mail'} icon={<RiVoiceprintFill/>} title="Voice mail" />        
         
     </div>
 

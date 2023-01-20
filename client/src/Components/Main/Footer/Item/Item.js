@@ -1,10 +1,10 @@
 import React from 'react'
 import './Item.scss'
 
-function Item({icon, title}) {
+function Item({icon, title, ids}) {
   return (
     <div className="Item">
-    <div className="icon">
+    <div  id={ids} className="icon">
         {icon}
 
     </div>

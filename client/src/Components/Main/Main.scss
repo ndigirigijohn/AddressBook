@@ -1,0 +1,23 @@
+.Main{
+    width:100% ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .Cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-top: 21vh;
+        align-items: center;
+        width: 100vw;
+        color: black;
+        gap: 5px;
+    }
+}
+
+//large and mdium screens
+@media (min-width: 768px) {
+    .Main{
+    }
+
+}

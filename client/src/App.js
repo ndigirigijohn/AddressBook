@@ -1,18 +1,17 @@
 import './App.scss';
 import React from 'react';
-//Header
-import Header from './Components/Header/Header';
-//Footer
-import Footer from './Components/Footer/Footer';
-//Main
 import Main from './Components/Main/Main';
+import {Routes, Route} from 'react-router-dom'
+import ContactView from './Components/ContactView/ContactView';
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Main />
-      <Footer />
+      <Routes>
+        <Route path='/' element={<Main/>}/>
+        <Route path='/:id' element={<ContactView/>}/>
+
+      </Routes>
 
     </div>
   );
